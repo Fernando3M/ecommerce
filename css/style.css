@@ -242,3 +242,68 @@ p{
     border-radius: 20px;
     background-color: #a694c0;
 }
+
+.rodape{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #532373;
+    margin-top: 20px;
+    align-items: flex-end;
+    border-radius: 20px;
+    }
+
+.info{
+    display: flex;
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+}
+
+.infoMarca{
+    display: block;
+    width: 35%;
+}
+
+.infoMarca img{
+    width: 0 auto;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.infoMarca p{
+    color: #fff;
+    text-align: justify;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.infoSite{
+    width: 65%;
+
+    border: 1px solid red;
+}
+
+.infoNav {
+    list-style-type: none;
+}
+
+.infoNav a{
+    color: #fff;
+}
+
+
+
+.elaborado{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.elaborado p{
+    width: auto;
+    color: #fff;
+}
