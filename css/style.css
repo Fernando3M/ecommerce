@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    display: flex;
+    height: 70px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.lista{
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #532373;;
+}
+a:hover{
+    color: blueviolet;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner{
+    display:flex;
+    flex-direction: column;
+    background-image: url(../imagems/fundoBanner.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.bannerTexto{
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    text-align: justify;
+    font-size: 40px;
+    width: 60%;
+    height: 40%;
+    color: #fefbff;
+}
+
+p{
+    width: 50%;
+    margin-top: 10px;
+    color: #4e0c6d;
+}
+
+.carrosselContainer{
+    width: 100%;
+    height: var(--height);
+    margin-top: 20px;
+    overflow-x: hidden;
+    mask-image: linear-gradient(to right, transparent, #000 15% 85%, transparent);
+}
+
+.carrossel{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.item{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    animation-delay: calc((10 / var(--quantity)) * var(--delay)) !important;
+    cursor: pointer;
+}
+
+.carrosselContainer.reverse .item{
+    animation: reverseRun 10s linear infinite;
+}
+
+.carrosselContainer:hover .item{
+    animation-play-state: paused ;
+    filter: grayscale(1);
+}
+
+.carrosselContainer .item:hover{
+    filter: grayscale(0);
+}
+
+
+@keyframes reverseRun {
+    from{
+        left: -200px;
+    } to {
+        left: 100x;
+    }
+    
+}
+
+.item img{
+    width: 100%;
+}
+
+@keyframes autoRun {
+    from{
+        left: 100%;
+    }
+    to{
+        left: -50px;
+    }
+}
+
+.folder{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.esquerda{
+    width:30%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagems/montagemPB.jpg);
+    opacity: 80%;
+}
+
+.esquerda img{
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.esquerda img:hover{
+    transform: scale(1.2);
+
+}
+
+.direita{
+    width:30%;
+    border-radius: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-image: url(../imagems/montagemPB.jpg);
+    opacity: 80%;
+}
+
+.direita img{
+    height: 100%;
+    transition: transform 0.5s ease;    
+}
+
+.direita img:hover{
+    transform: scale(1.2);
+
+}
+
+.meio{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.cima{
+    height: 23%;
+    align-items: start;
+}
+
+.cima img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.centro{
+    height: 54%;
+    align-items: center;
+    display: flex;
+}
+
+.centro h2{
+    font-size: 125px;
+    text-align: center;
+    color: #704d91;
+}
+
+.baixo{
+    height: 23%;
+    align-items: end;
+}
+
+.baixo img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.direita{
+    width: 30%;
+    border-radius: 20px;
+    background-color: #a694c0;
+}
