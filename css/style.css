@@ -262,7 +262,7 @@ p{
 
 .infoMarca{
     display: block;
-    width: 35%;
+    width: 30%;
 }
 
 .infoMarca img{
@@ -280,20 +280,38 @@ p{
 }
 
 .infoSite{
-    width: 65%;
+    width: 30%;
+    margin-top: 10px;
+}
 
-    border: 1px solid red;
+.infoSite p{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size:x-large;
 }
 
 .infoNav {
     list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: large;
 }
 
 .infoNav a{
     color: #fff;
 }
 
+.feedback{
+    display: flex;
 
+    border: 1px solid red;
+}
+
+.elaborado{
+
+}
 
 .elaborado{
     display: flex;
@@ -305,5 +323,5 @@ p{
 
 .elaborado p{
     width: auto;
-    color: #fff;
+    color: #351748;
 }
